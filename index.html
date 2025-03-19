@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="professors.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=IBM+Plex+Mono:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- navbar and landing page -->
+    <header>
+        <nav class="navbar">
+            <div class="logo"><i class="fa-solid fa-book-open-reader"></i>Centre
+                L'Excellence
+            </div>
+            <ul class="nav-list" id="mynav-list">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#second-container-sr">Professeurs</a></li>
+                <li><a href="#schedule-container-ym">Horaires</a></li>
+                <li><a href="#map-holder-ym">Localisation</a></li>
+                <li><a href="#footer">Contact</a></li>
+                <label class="switch" id="toggleBtn">
+                    <input type="checkbox" />
+                    <span class="slider"></span>
+                </label>
+            </ul>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <i class="fa fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+    <section class="herocontainer fade-in" id="accueil">
+        <div class="hero">
+            <h1>Where Growth<br>
+                Meets Excellence</h1>
+            <p>"Bienvenue au Centre L'Excellence,<BR>
+                où chaque cours est une opportunité de repousser vos limites
+                et d'atteindre de nouveaux sommets de savoir et de compétences."</p>
+
+            <button class="button">
+                Explore
+            </button>
+        </div>
+        <div class="imagee-container">
+            <img src="img/class1.jpeg" alt="Image 1" class="imagee imagee-1">
+            <img src="img/class2.jpeg" alt="Image 2" class="imagee imagee-2">
+            <img src="img/class3.jpeg" alt="Image 3" class="imagee imagee-3">
+        </div>
+    </section>
+
+    <section class="container-sr">
+        <section class=" fade-in" id="first-container-sr">
+            <h1>NOS VALEURS UNIQUES</h1>
+            <div class="values-content-sr">
+                <div class="value-sr">
+                    <div class="value-icon-sr">
+                        <img src="img/value1.png" alt="Like">
+                    </div>
+                    <div class="value-text-sr">
+                        <h3>Éducateurs Experts</h3>
+                        <p>Une équipe de professionnels expérimentés dédiée à offrir des cours et un accompagnement de
+                            qualité</p>
+                    </div>
+                </div>
+                <div class="value-sr">
+                    <div class="value-icon-sr">
+                        <img src="img/value2.png" alt="Like">
+                    </div>
+                    <div class="value-text-sr">
+                        <h3>Accent sur le Bien-être</h3>
+                        <p>En intégrant des sorties et des activités sportives, nous favorisons le bien-être mental des étudiants.</p>
+                    </div>
+                </div>
+                <div class="value-sr">
+                    <div class="value-icon-sr">
+                        <img src="img/value3.png" alt="Like">
+                    </div>
+                    <div class="value-text-sr">
+                        <h3>Approche Personnalisée</h3>
+                        <p>Des programmes adaptés aux besoins individuels, garantissant à chaque étudiant ou client le
+                            soutien nécessaire pour réussir</p>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class=" fade-in" id="second-container-sr">
+            <div class="grid-container-sr" id="first-grid-sr">
+                <h1>NOS ESPRITS <br> GUIDES</h1>
+                <p>Nos enseignants dévoués mettent tout leur cœur dans chaque leçon, guidant vos enfants avec passion et
+                    soin.
+                    Grâce à leur travail acharné et à leur engagement sans faille, ils inspirent un amour pour
+                    l'apprentissage et conduisent chaque enfant vers un avenir plus brillant et couronné de succès.
+                    Avec leur expertise et leur dévouement sincère, le potentiel de votre enfant brillera comme jamais
+                    auparavant.</p>
+            </div>
+            <div class="grid-container-sr" id="second-grid-sr">
+                <div class="grid-content-sr" id="first-content-sr">
+                    <div class="teacher-card-sr">
+                        <div class="teacher-img-sr" id="pic-taha-sr">
+                            <img src="img/prof taha.png" alt="Taha Houane">
+                        </div>
+                        <span class="teacher-name-sr">
+                            <h3>TAHA HOUANE</h3>
+                        </span>
+                    </div>
+                    <div class="infos-card-sr" id="text-taha-sr">
+                        <p>✦ Le français a été enseigné dès le début avec expertise et dévouement.</p>
+                    </div>
+                </div>
+
+                <div class="grid-content-sr" id="second-content-sr">
+                    <div class="infos-card-sr" id="text-ayoub-sr">
+                        <p>✦ Les mathématiques ont été enseignées dès le début avec compétence et passion.</p>
+                    </div>
+
+                    <div class="teacher-card-sr">
+                        <div class="teacher-img-sr" id="pic-ayoub-sr">
+                            <img src="img/prof ayoub.png" alt="Ayoub Motachakir">
+                        </div>
+                        <span class="teacher-name-sr">
+                            <h3>AYOUB MOTACHAKIR</h3>
+                        </span>
+                    </div>
+                </div>
+                <div class="grid-content-sr" id="third-content-sr">
+                    <div class="teacher-card-sr ">
+                        <div class="teacher-img-sr" id="pic-abdo-sr">
+                            <img src="img/prof_abdeljabar-ai-brush-removebg-vjit3uyr.png" alt="Abdel Jabbar">
+                        </div>
+                        <span class="teacher-name-sr ">
+                            <h3>ABDELJABBAR L'YASMI</h3>
+                        </span>
+                    </div>
+                    <div class="infos-card-sr " id="text-abdo-sr">
+                        <p>✦ Les sciences de la vie et de la terre ont été enseignées depuis le début avec connaissance
+                            et passion</p>
+                    </div>
+                </div>
+                <br><br>
+            </div>
+        </section>
+    </section>
+    <section class="tahaquote fade-in">
+        <h1>L'ÉTINCELLE QUI NOUS A ENFLAMMÉS</h1>
+        <h2>“</h2>
+        <div class="quote">
+            <p>Le Centre L'Excellence" a commencé par un simple rêve : créer un espace où l'éducation pourrait
+                transformer
+                des vies. Partant d'une petite salle avec seulement un tableau blanc et quelques élèves motivés, les
+                fondateurs ont travaillé sans relâche pour bâtir un environnement bienveillant. Au fil du temps, le
+                dévouement du centre pour les cours du soir s'est répandu, et aujourd'hui, "Le Centre L'Excellence" se
+                dresse comme un symbole d'opportunité, prouvant qu'avec passion et travail acharné, même les débuts les
+                plus
+                modestes peuvent mener à des résultats extraordinaires.
+            </p>
+        </div>
+        <br>
+        <p>Taha Houane</p>
+    </section>
+
+    <section class="events-section fade-in">
+        <div class="container">
+            <header class="section-header">
+                <h2 class="section-title">OUR GUIDING <br>MINDS</h2>
+                <p class="section-description">
+                    LES EXPÉRIENCES PASSÉES NOUS FORMENT, ENFLAMMANT NOTRE CROISSANCE ET RAVIVANT NOTRE CONCENTRATION
+                    SUR NOS ÉTUDES. ELLES ALIMENTENT NOTRE VOYAGE, NOUS POUSSANT VERS LA CONNAISSANCE ET LA DÉCOUVERTE
+                    DE NOUS-MÊMES.
+                </p>
+            </header>
+
+            <div class="events-grid">
+                <!-- Ifran Outing -->
+                <div class="event-card">
+                    <div class="event-image-container">
+                        <img src="img/img0.jpg" alt="Ifrane trip" class="event-image">
+                    </div>
+                    <div class="event-content">
+                        <h3 class="event-title">EXCURSION À IFRANE</h3>
+                        <p class="event-description">
+                            Par une matinée fraîche, nous avons pris la route pour Ifrane, une ville charmante du Moyen
+                            Atlas. Son apparence ressemblant à celle de la Suisse, avec ses rues soignées et ses chalets
+                            de style européen, nous a accueillis. Nous avons exploré l’Université Al Akhawayn, admiré la
+                            statue emblématique du lion et nous sommes détendus au bord du lac Dayet Aoua. Nous avons
+                            apprécié la quiétude des lieux, partageant histoires et rires. Plus tard, nous nous sommes
+                            réchauffés dans un café chaleureux avec des boissons chaudes et des pâtisseries.
+                            L'atmosphère et la nature à couper le souffle ont fait d'Ifrane une escapade parfaite, nous
+                            laissant rafraîchis et connectés.
+                        </p>
+                        <p class="event-date">July, 2021</p>
+                    </div>
+                </div>
+
+                <!-- Abdesliman Outing -->
+                <div class="event-card reverse">
+                    <div class="event-content">
+                        <h3 class="event-title">EXCURSION À ABDESLIMAN</h3>
+                        <p class="event-description">
+                            Un après-midi chaud, nous nous sommes aventurés à Abdesliman, un trésor caché niché dans les
+                            collines ondulantes qui entourent notre ville. Le voyage en soi était merveilleux, passant
+                            devant des vues magnifiques, jusqu'à atteindre la tranquillité d'Abdesliman. Nous avons fait
+                            de la randonnée, exploré les ruisseaux clairs et dégusté un déjeuner pique-nique. Plus tard,
+                            nous nous sommes détendus près du lac calme, pour un moment de réflexion. La combinaison de
+                            la bonne compagnie, de la tranquillité et de la beauté naturelle nous a laissés en paix.
+                        </p>
+                        <p class="event-date">March, 2022</p>
+                    </div>
+                    <div class="event-image-container">
+                        <img src="img/img4.jpg" alt="Abdesliman outing" class="event-image">
+                    </div>
+                </div>
+
+                <!-- Football Matches -->
+                <div class="event-card">
+                    <div class="event-image-container">
+                        <img src="img/img3.jpg" alt="Football matches" class="event-image">
+                    </div>
+                    <div class="event-content">
+                        <h3 class="event-title">MATCHS DE FOOTBALL</h3>
+                        <p class="event-description">
+                            Chaque semaine, nous nous réunissions pour nos matchs de football, le moment fort de nos
+                            journées. Le terrain usé semblait être chez nous. Nous passions des heures à jouer, mêlant
+                            rivalité amicale, compétition et rires. Que ce soit pour célébrer un superbe but ou rire
+                            d’un tir raté, nous nous encouragions toujours les uns les autres. Après chaque match, nous
+                            nous asseyions ensemble, reprenant notre souffle, partageant des moments qui renforçaient
+                            notre lien. Ces matchs n’étaient pas seulement une question de football – ce étaient des
+                            souvenirs que nous chéririons pour toujours.
+                        </p>
+                        <p class="event-date">Weekly</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- second quote -->
+
+
+
+    <section class="feedback">
+        <h1>NOS ÉTUDIANTS ET ANCIENS AMIS</h1>
+        <h2>“</h2>
+        <div class="feed_quote">
+            <p>Le Centre l'Excellence a été un soutien incroyable tout au long de nos années de lycée. Leur
+                encouragement inébranlable et leur dévouement nous ont poussés à travailler plus dur et à viser plus
+                haut. Ils ne se sont pas contentés de nous aider dans nos études, mais ont aussi insufflé en nous la
+                confiance nécessaire pour poursuivre nos rêves. Les expériences et les souvenirs créés pendant notre
+                passage là-bas font partie des meilleurs de nos vies, et nous serons toujours reconnaissants pour
+                les
+                conseils et l'inspiration qu'ils nous ont offerts. Le Centre l'Excellence a véritablement façonné
+                notre
+                parcours au lycée, et nous portons les leçons apprises avec nous à mesure que nous avançons.
+            </p>
+        </div>
+        <p class="feed_writer">Houssam Elmghimar, étudiant en informatique en Chine</p>
+    </section>
+
+    <!-- map section -->
+    <section class="schedule-container-ym" id="schedule-container-ym">
+        <h1 class="schedule-title-ym">SCHEDULES</h1>
+        <div class="table-elements-ym" id="table-elements-ym">
+            <div class="table-element-ym">
+                <h2 class="table-element-title-ym"></h2>
+                <table class="table-section-ym">
+                    <tr class="table-header-ym">
+                        <th></th>
+                        <th>Lundi</th>
+                        <th>Mardi</th>
+                        <th>Mercredi</th>
+                        <th>Jeudi</th>
+                        <th>Vendredi</th>
+                        <th>Samedi</th>
+                        <th>Dimanche</th>
+                    </tr>
+                    <tr>
+                        <td>19:00-20:30</td>
+                        <td class="table-data-ym"></td>
+                        <td class="table-data-ym"></td>
+                        <td class="table-data-ym"></td>
+                        <td class="table-data-ym"></td>
+                        <td class="table-data-ym"></td>
+                        <td class="table-data-ym"></td>
+                        <td class="table-data-ym"></td>
+                    </tr>
+                    <tr>
+                        <td>20:30-22:00</td>
+                        <td class="table-data-ym"></td>
+                        <td class="table-data-ym"></td>
+                        <td class="table-data-ym"></td>
+                        <td class="table-data-ym"></td>
+                        <td class="table-data-ym"></td>
+                        <td class="table-data-ym"></td>
+                        <td class="table-data-ym"></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="table-element-ym">
+                <h2 class="table-element-title-ym"></h2>
+                <table class="table-section-ym">
+                    <tr class="table-header-ym">
+                        <th></th>
+                        <th>Lundi</th>
+                        <th>Mardi</th>
+                        <th>Mercredi</th>
+                        <th>Jeudi</th>
+                        <th>Vendredi</th>
+                        <th>Samedi</th>
+                        <th>Dimanche</th>
+                    </tr>
+                    <tr>
+                        <td>19:00-20:30</td>
+                        <td class="table-data-ym"></td>
+                        <td class="table-data-ym"></td>
+                        <td class="table-data-ym"></td>
+                        <td class="table-data-ym"></td>
+                        <td class="table-data-ym"></td>
+                        <td class="table-data-ym"></td>
+                        <td class="table-data-ym"></td>
+                    </tr>
+                    <tr>
+                        <td>20:30-22:00</td>
+                        <td class="table-data-ym"></td>
+                        <td class="table-data-ym"></td>
+                        <td class="table-data-ym"></td>
+                        <td class="table-data-ym"></td>
+                        <td class="table-data-ym"></td>
+                        <td class="table-data-ym"></td>
+                        <td class="table-data-ym"></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="table-element-ym">
+                <h2 class="table-element-title-ym"></h2>
+                <table class="table-section-ym">
+                    <tr class="table-header-ym">
+                        <th></th>
+                        <th>Lundi</th>
+                        <th>Mardi</th>
+                        <th>Mercredi</th>
+                        <th>Jeudi</th>
+                        <th>Vendredi</th>
+                        <th>Samedi</th>
+                        <th>Dimanche</th>
+                    </tr>
+                    <tr>
+                        <td>19:00-20:30</td>
+                        <td class="table-data-ym"></td>
+                        <td class="table-data-ym"></td>
+                        <td class="table-data-ym"></td>
+                        <td class="table-data-ym"></td>
+                        <td class="table-data-ym"></td>
+                        <td class="table-data-ym"></td>
+                        <td class="table-data-ym"></td>
+                    </tr>
+                    <tr>
+                        <td>20:30-22:00</td>
+                        <td class="table-data-ym"></td>
+                        <td class="table-data-ym"></td>
+                        <td class="table-data-ym"></td>
+                        <td class="table-data-ym"></td>
+                        <td class="table-data-ym"></td>
+                        <td class="table-data-ym"></td>
+                        <td class="table-data-ym"></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="table-element-ym">
+                <h2 class="table-element-title-ym"></h2>
+                <table class="table-section-ym">
+                    <tr class="table-header-ym">
+                        <th></th>
+                        <th>Lundi</th>
+                        <th>Mardi</th>
+                        <th>Mercredi</th>
+                        <th>Jeudi</th>
+                        <th>Vendredi</th>
+                        <th>Samedi</th>
+                        <th>Dimanche</th>
+                    </tr>
+                    <tr>
+                        <td>19:00-20:30</td>
+                        <td class="table-data-ym"></td>
+                        <td class="table-data-ym"></td>
+                        <td class="table-data-ym"></td>
+                        <td class="table-data-ym"></td>
+                        <td class="table-data-ym"></td>
+                        <td class="table-data-ym"></td>
+                        <td class="table-data-ym"></td>
+                    </tr>
+                    <tr>
+                        <td>20:30-22:00</td>
+                        <td class="table-data-ym"></td>
+                        <td class="table-data-ym"></td>
+                        <td class="table-data-ym"></td>
+                        <td class="table-data-ym"></td>
+                        <td class="table-data-ym"></td>
+                        <td class="table-data-ym"></td>
+                        <td class="table-data-ym"></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="table-element-ym">
+                <h2 class="table-element-title-ym"></h2>
+                <table class="table-section-ym">
+                    <tr class="table-header-ym">
+                        <th></th>
+                        <th>Lundi</th>
+                        <th>Mardi</th>
+                        <th>Mercredi</th>
+                        <th>Jeudi</th>
+                        <th>Vendredi</th>
+                        <th>Samedi</th>
+                        <th>Dimanche</th>
+                    </tr>
+                    <tr>
+                        <td>19:00-20:30</td>
+                        <td class="table-data-ym"></td>
+                        <td class="table-data-ym"></td>
+                        <td class="table-data-ym"></td>
+                        <td class="table-data-ym"></td>
+                        <td class="table-data-ym"></td>
+                        <td class="table-data-ym"></td>
+                        <td class="table-data-ym"></td>
+                    </tr>
+                    <tr>
+                        <td>20:30-22:00</td>
+                        <td class="table-data-ym"></td>
+                        <td class="table-data-ym"></td>
+                        <td class="table-data-ym"></td>
+                        <td class="table-data-ym"></td>
+                        <td class="table-data-ym"></td>
+                        <td class="table-data-ym"></td>
+                        <td class="table-data-ym"></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="table-element-ym">
+                <h2 class="table-element-title-ym"></h2>
+                <table class="table-section-ym">
+                    <tr class="table-header-ym">
+                        <th></th>
+                        <th>Lundi</th>
+                        <th>Mardi</th>
+                        <th>Mercredi</th>
+                        <th>Jeudi</th>
+                        <th>Vendredi</th>
+                        <th>Samedi</th>
+                        <th>Dimanche</th>
+                    </tr>
+                    <tr>
+                        <td>19:00-20:30</td>
+                        <td class="table-data-ym"></td>
+                        <td class="table-data-ym"></td>
+                        <td class="table-data-ym"></td>
+                        <td class="table-data-ym"></td>
+                        <td class="table-data-ym"></td>
+                        <td class="table-data-ym"></td>
+                        <td class="table-data-ym"></td>
+                    </tr>
+                    <tr>
+                        <td>20:30-22:00</td>
+                        <td class="table-data-ym"></td>
+                        <td class="table-data-ym"></td>
+                        <td class="table-data-ym"></td>
+                        <td class="table-data-ym"></td>
+                        <td class="table-data-ym"></td>
+                        <td class="table-data-ym"></td>
+                        <td class="table-data-ym"></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="table-element-ym">
+                <h2 class="table-element-title-ym"></h2>
+                <table class="table-section-ym">
+                    <tr class="table-header-ym">
+                        <th></th>
+                        <th>Lundi</th>
+                        <th>Mardi</th>
+                        <th>Mercredi</th>
+                        <th>Jeudi</th>
+                        <th>Vendredi</th>
+                        <th>Samedi</th>
+                        <th>Dimanche</th>
+                    </tr>
+                    <tr>
+                        <td>19:00-20:30</td>
+                        <td class="table-data-ym"></td>
+                        <td class="table-data-ym"></td>
+                        <td class="table-data-ym"></td>
+                        <td class="table-data-ym"></td>
+                        <td class="table-data-ym"></td>
+                        <td class="table-data-ym"></td>
+                        <td class="table-data-ym"></td>
+                    </tr>
+                    <tr>
+                        <td>20:30-22:00</td>
+                        <td class="table-data-ym"></td>
+                        <td class="table-data-ym"></td>
+                        <td class="table-data-ym"></td>
+                        <td class="table-data-ym"></td>
+                        <td class="table-data-ym"></td>
+                        <td class="table-data-ym"></td>
+                        <td class="table-data-ym"></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="table-element-ym">
+                <h2 class="table-element-title-ym"></h2>
+                <table class="table-section-ym">
+                    <tr class="table-header-ym">
+                        <th></th>
+                        <th>Lundi</th>
+                        <th>Mardi</th>
+                        <th>Mercredi</th>
+                        <th>Jeudi</th>
+                        <th>Vendredi</th>
+                        <th>Samedi</th>
+                        <th>Dimanche</th>
+                    </tr>
+                    <tr>
+                        <td>19:00-20:30</td>
+                        <td class="table-data-ym"></td>
+                        <td class="table-data-ym"></td>
+                        <td class="table-data-ym"></td>
+                        <td class="table-data-ym"></td>
+                        <td class="table-data-ym"></td>
+                        <td class="table-data-ym"></td>
+                        <td class="table-data-ym"></td>
+                    </tr>
+                    <tr>
+                        <td>20:30-22:00</td>
+                        <td class="table-data-ym"></td>
+                        <td class="table-data-ym"></td>
+                        <td class="table-data-ym"></td>
+                        <td class="table-data-ym"></td>
+                        <td class="table-data-ym"></td>
+                        <td class="table-data-ym"></td>
+                        <td class="table-data-ym"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        </div>
+    </section>
+        <section class="map-holder-ym" id="map-holder-ym">
+            <h1 class="map-title-ym">OUR LOCATION</h1>
+            <div class="map-element-ym">
+                <div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no"
+                        marginheight="0" marginwidth="0"
+                        src="https://maps.google.com/maps?width=1000&amp;height=200&amp;hl=en&amp;q=Centre L'excellence Bernoussi&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a
+                        href="https://sprunkiplay.com/">Sprunki Game</a></div>
+                <style>
+                    .gmap_canvas {
+                        overflow: hidden;
+                        background: none !important;
+                        width: 100%;
+                        height: 200px;
+                    }
+
+                    .gmap_iframe {
+                        height: 200px !important;
+                    }
+                </style>
+        </section>
+
+    <footer id="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>REJOIGNEZ NOTRE FAMILLE</h3>
+                <p>Là où la curiosité rencontre la communauté. Rejoignez nos cours du soir pour explorer de nouvelles
+                    idées, élargir votre connaissance et vous connecter avec des apprenants ayant les mêmes aspirations.
+                </p>
+                <p class="copyright">&copy;Copyright 2025 Amaranth | Design By Meriem Mouhim</p>
+            </div>
+            <div class="footer-section">
+                <h3>CONTACTEZ-NOUS</h3>
+                <p>Email: <a href="mailto:GroupeLexcellence@gmail.com">GroupeLexcellence@gmail.com</a></p>
+                <p>Tel: <a href="tel:+212612345678">+212 6 12 34 56 78</a></p>
+                <p>Address: <a href="https://www.google.com/maps/search/?api=1&query=1234+Elm+Street+Apt.+56B,+Casablanca,+20000" target="_blank">1234 Elm Street Apt. 56B, Casablanca, 20000</a></p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>SUIVEZ-NOUS</h3>
+                <ul class="wrapper">
+                    <li class="icon facebook">
+                        <a href="https://www.facebook.com/profile.php?id=100063743696721" target="_blank"><span class="tooltip">Facebook</span>
+                        <svg viewBox="0 0 320 512" height="1.2em" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z">
+                            </path>
+                        </svg></a>
+                        
+                    </li>
+
+                    <li class="icon instagram">
+                        <a href="https://www.instagram.com/centre_excellence_bernoussii?igsh=MWNiYmFxNXZxZ3UwdQ==" target="_blank"><span class="tooltip">Instagram</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="1.2em" fill="currentColor"
+                            class="bi bi-instagram" viewBox="0 0 16 16">
+                            <path
+                                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z">
+                            </path>
+                        </svg></a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+        <hr>
+        <a href="https://zertline.com" class="btn-shine">Created by <span class="A">&#548;</span>ertline</a>
+    </footer>
+    <button id="scroll-to-top" title="Back to Top">&#8679;</button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
